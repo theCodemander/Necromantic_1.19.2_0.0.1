@@ -2,7 +2,7 @@ package com.theCodemander.necromantic;
 
 
 import com.mojang.logging.LogUtils;
-//import com.theCodemander.necromantic.block.NecromanticBlocks;
+import com.theCodemander.necromantic.block.NecromanticBlocks;
 import com.theCodemander.necromantic.item.NecromanticItems;
 
 import net.minecraft.client.Minecraft;
@@ -45,7 +45,7 @@ public class NecromanticMod {
         //Register Items
         NecromanticItems.register(modEventBus);
         //Register Blocks
-        //NecromanticBlocks.register(modEventBus);
+        NecromanticBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
