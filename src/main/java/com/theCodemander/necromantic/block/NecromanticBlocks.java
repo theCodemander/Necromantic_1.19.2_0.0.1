@@ -25,7 +25,7 @@ public class NecromanticBlocks {
     //Mod Blocks
     public static final RegistryObject<Block> ZIRCON_BLOCK = registerBlock("soul_crystal_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(2f).requiresCorrectToolForDrops()), NecromanticCreativeTab.NECROMANTIC_MOD_TAB);
+                    .strength(2.5f).requiresCorrectToolForDrops()), NecromanticCreativeTab.NECROMANTIC_MOD_TAB);
 
 
 
