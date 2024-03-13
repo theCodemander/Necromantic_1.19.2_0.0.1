@@ -1,0 +1,10 @@
+{
+    "name": "Liber Mortuorum",
+    "landing_text": "$(o)$(l)There are fates worse than death.$(br)$()Where the boundaries between life and death blur and the ethereal realms intertwine with our own, the 13th Magisterium Compendium stands as a testament to the mysteries that lie beyond mortal comprehension.",
+    "version": "0",
+    "subtitle":"13th Magisterium Compendium",
+    "creative_tab":"necromantic_mod_tab",
+    "book_texture": "patchouli:textures/gui/book_purple.png",
+    "model": "necromantic:liber_mortuorum",
+    "show_progress": false
+}

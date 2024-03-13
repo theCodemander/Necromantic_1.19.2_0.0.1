@@ -1,0 +1,11 @@
+{
+    "name": "Soul Crystals",
+    "icon": "necromantic:soul_crystal",
+    "category": "necromanticmod:items_category",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Soul Crystals are essentially souls that have undergone a meticulous alchemical and magic process, which culminates in their condensation into a gem-like form."
+        }
+    ]
+}
