@@ -2,6 +2,8 @@ package com.theCodemander.necromantic.block;
 
 import com.google.common.base.Supplier;
 import com.theCodemander.necromantic.NecromanticMod;
+import com.theCodemander.necromantic.block.custom.NecromanticInfusionAltar;
+import com.theCodemander.necromantic.block.custom.__NecromanticInfusionAltar;
 import com.theCodemander.necromantic.item.NecromanticCreativeTab;
 import com.theCodemander.necromantic.item.NecromanticItems;
 
@@ -24,10 +26,12 @@ public class NecromanticBlocks {
 
     //Mod Blocks
     public static final RegistryObject<Block> ZIRCON_BLOCK = registerBlock("soul_crystal_block",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(2.5f).requiresCorrectToolForDrops()), NecromanticCreativeTab.NECROMANTIC_MOD_TAB);
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(2.5f).requiresCorrectToolForDrops())
+            , NecromanticCreativeTab.NECROMANTIC_MOD_TAB);
 
-
+    public static final RegistryObject<Block> INFUSION_ALTAR = registerBlock("infusion_altar",
+            () -> new NecromanticInfusionAltar(BlockBehaviour.Properties.of(Material.STONE).noOcclusion())
+            , NecromanticCreativeTab.NECROMANTIC_MOD_TAB);
 
 
     //Block Register and IEventBus

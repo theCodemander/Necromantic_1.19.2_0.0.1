@@ -6,6 +6,8 @@ import com.theCodemander.necromantic.block.NecromanticBlocks;
 import com.theCodemander.necromantic.item.NecromanticItems;
 
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -59,6 +61,7 @@ public class NecromanticMod {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+            ItemBlockRenderTypes.setRenderLayer(NecromanticBlocks.INFUSION_ALTAR.get(), RenderType.translucent());
         }
     }
 }
